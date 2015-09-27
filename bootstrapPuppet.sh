@@ -4,7 +4,7 @@ GIT_BRANCH="master"
 GIT_REPO="https://github.com/Ddall/remoteTools.git"
 GIT_EMAIL="root@localhost"
 GIT_USERNAME="rootKeeper"
-LOCAL_PREFIX="rt_"
+LOCAL_PREFIX="rt"
 
 apt-get install ssh git wget build-essential ruby-dev -y
 gem install librarian-puppet
@@ -32,4 +32,4 @@ git reset --hard origin/"$GIT_BRANCH"
 git branch --set-upstream-to=origin/"$GIT_BRANCH" "$GIT_BRANCH"
 
 librarian-puppet install
-bash /etc/puppet/environments/main/modules/"$LOCAL_PREFIX"/files/"$LOCAL_PREFIX"-puppet-apply.sh
+bash /etc/puppet/environments/main/modules/"$LOCAL_PREFIX"_/files/"$LOCAL_PREFIX"-puppet-apply.sh
