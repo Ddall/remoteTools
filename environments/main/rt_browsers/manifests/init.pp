@@ -20,6 +20,6 @@ class rt_browsers{
     },
   }
 
-  
+
 
 }

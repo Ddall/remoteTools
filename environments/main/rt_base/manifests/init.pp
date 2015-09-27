@@ -65,7 +65,7 @@ class rt_base{
   }
 
 # Scripts
-  file{'/usr/local/sbin/rt-puppet-apply':
+  file{'/usr/local/sbin/rt-puppet-apply.sh':
     ensure => present,
     mode   => 700,
     source => 'puppet:///modules/rt_base/rt-puppet-apply.sh'
