@@ -6,7 +6,7 @@ class rt_browsers{
     release  => 'trusty',
     repos    => 'main',
     key      => {
-      id     => 'A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 ',
+      id     => 'A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89',
       server => 'keys.gnupg.net',
     },
   }
